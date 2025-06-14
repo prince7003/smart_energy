@@ -33,16 +33,8 @@ conda activate energy-llm
 export GROQ_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-### 3 · Run the notebook
-```
-jupyter lab          # or: jupyter notebook
-# open `llm_queries.ipynb` and Run ▶ all cells
-```
-A results table will appear; the `is_match` column should read **True** for every row.
 
----
-
-## 📝 Notebook Walk-Through
+## Notebook Walk-Through
 | Step | Purpose |
 |-----:|---------|
 | 1 | Load the raw text file → parse dates → create a `DateTimeIndex`. |
@@ -50,17 +42,9 @@ A results table will appear; the `is_match` column should read **True** for ever
 | 3 | Build a strict **system prompt** demanding pure code in triple back-ticks. |
 | 4 | Call Groq → Llama-3 to get code for each question. |
 | 5 | **Sandbox exec:** run code in a namespace containing only `df.copy(deep=True)` and std-lib. |
-| 6 | Compare model output with ground truth → tabulate accuracy. |
 
 ---
- 
 
----
- 
-
-## 📊 Extending the Benchmark
-Add more Q&A pairs in the `SOLUTIONS` dict inside the notebook.  
-The evaluation cells automatically pick them up and add rows to the score table.
 
 ---
 
