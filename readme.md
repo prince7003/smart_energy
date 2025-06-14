@@ -49,6 +49,4 @@ export GROQ_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 * groq ≥ 0.7
 * jupyterlab / notebook  
 
-Full, pinned versions live in `environment.yml`.
-
  
