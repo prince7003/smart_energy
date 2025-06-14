@@ -16,16 +16,10 @@ Key points:
 ## Repository Layout
 ```
 
-|── household_power_consumption.txt   # raw UCI text file 127 MB
-├── llm_queries.ipynb                     # Jupyter notebook (main pipeline)
-├── helper.py                             # Groq wrapper + secure exec helpers
-├── environment.yml                       # Conda environment (Python 3.11)
+├── llm_queries.ipynb                     # Jupyter notebook (main pipeline)                     
 └── README.md                             # /power-llm.git
-cd power-llm
-
-# create and activate the exact environment
-conda env create -f environment.yml
-conda activate energy-llm
+ 
+ 
 ```
 
 ### 2 · Provide your Groq API key
