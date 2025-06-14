@@ -8,7 +8,7 @@ This repository demonstrates an end-to-end workflow in which a Large Language Mo
 Key points:
 
 * **Dataset** UCI Household Power Consumption (Dec-2006 → Nov-2010, 2 M rows).  
-* **Model** `llama3-8b-instruct` served through the **Groq** API.  
+* **Model** `qwen-qwq-32b` served through the **Groq** API.  
 * **Safety** Generated code runs in an isolated namespace with `df.copy(deep=True)` so the master DataFrame is never mutated.  
 * **Verification** Each LLM answer is compared against a ground-truth snippet; results are displayed in a score table.
 
